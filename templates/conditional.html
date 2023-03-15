@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <!--
+    <h1>conditional statements</h1>
+       {% if a > b %}
+    <h1> a is graterthan</h1>  
+        {% else %}
+    <h1>a is  not graterthan</h1>
+        {% endif %}
+    </center>
+    -->
+
+    <!--
+    <h1>if else conditional statements</h1>
+        {% if a > b %}
+            <h1>a is gratement</h1>
+            <h1>{{a}}</h1>
+        {% else %}
+            <h1>b is graterthan</h1>
+            <h1>{{b}}</h1>
+        {% endif %}
+        -->
+
+        <!--
+
+        <h1>if elif-else conditional statements</h1>
+        {% if a > b and a > c %} 
+            <h1>a is  graterthan</h1>
+            <h1>{{a}}</h1>
+        {% elif a > c %} 
+            <h1>b is graterthan</h1>
+            <h1>{{b}}</h1>
+        {% else %} 
+            <h1>c is graterthan</h1>
+            <h1>{{c}}</h1>
+        {% endif %}
+
+        -->
+      
+        <h1>Nested if conditional</h1>
+        {% if a > c %}
+        {% if a > c %} 
+            <h1>a is gratement</h1>
+            <h1>{{a}}</h1> 
+
+            {% else %} 
+                <h1>c is graterthan</h1>
+                
+                <h1>{{c}}</h1>
+            <h1>a is not graterthan</h1>
+            <h1>c is not graterthan</h1>
+        {% endif %}
+                {% if a > c %}
+                    <h1>b is graterthan</h1>
+                   
+                    <h1>{{b}}</h1>
+                    {% else %} 
+                        <h1>c is graterthan</h1>
+                        
+                        <h1>{{c}}</h1>
+                    <h1>b is not graterthan</h1>
+                    <h1>c is not graterthan</h1>
+                {% endif %}
+        {% endif %}
+
+        
+
+
+</body>
+</html>
